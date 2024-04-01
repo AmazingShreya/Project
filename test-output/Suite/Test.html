@@ -1,0 +1,485 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>81/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Mar 31 10:44:27 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>668 seconds (668830 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC38_BlogLink()'><b>TC38_BlogLink</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC31_AdvancedSearch_ProductDescription()'><b>TC31_AdvancedSearch_ProductDescription</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC55_Register_InvalidEmail()'><b>TC55_Register_InvalidEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC65_Register_OnlyConfirmPasswordMissing()'><b>TC65_Register_OnlyConfirmPasswordMissing</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC71_MainPage_SubscribeWithInvalidEmail()'><b>TC71_MainPage_SubscribeWithInvalidEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC57_Register_ConfirmpasswordMismatch()'><b>TC57_Register_ConfirmpasswordMismatch</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC15_CheckIfWishlistQuantityIsDisplayed()'><b>TC15_CheckIfWishlistQuantityIsDisplayed</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC80_User_CheckShoppingCartCountAfterAddingProduct()'><b>TC80_User_CheckShoppingCartCountAfterAddingProduct</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>6</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC70_MainPage_SubscribeIsDisplayed()'><b>TC70_MainPage_SubscribeIsDisplayed</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC49_LoginPage_LoginWithoutInput()'><b>TC49_LoginPage_LoginWithoutInput</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC72_MainPage_SubscribeWithValidEmail()'><b>TC72_MainPage_SubscribeWithValidEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC01_CheckIfSiteIsRunning()'><b>TC01_CheckIfSiteIsRunning</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC53_Register_OnlyFirstName()'><b>TC53_Register_OnlyFirstName</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC42_CheckRecentlyViewedProduct()'><b>TC42_CheckRecentlyViewedProduct</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC67_Register_OnlyLastnameMissing()'><b>TC67_Register_OnlyLastnameMissing</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC30_AdvancedSearch_Subcategory()'><b>TC30_AdvancedSearch_Subcategory</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC07_CheckIfShippingReturnsPageIsRunning()'><b>TC07_CheckIfShippingReturnsPageIsRunning</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC39_BlogTagsLink()'><b>TC39_BlogTagsLink</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC56_Register_InvalidPassword()'><b>TC56_Register_InvalidPassword</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC22_NavigatetoHomePage()'><b>TC22_NavigatetoHomePage</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC77_LoginPage_LogoutSuccessful()'><b>TC77_LoginPage_LogoutSuccessful</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>5</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC24_Search_LessData()'><b>TC24_Search_LessData</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC16_CheckPopulatTagLink()'><b>TC16_CheckPopulatTagLink</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC19_CheckSubCategoryLink()'><b>TC19_CheckSubCategoryLink</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC40_BlogArchiveTags_Link()'><b>TC40_BlogArchiveTags_Link</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC60_Register_OnlyLastName()'><b>TC60_Register_OnlyLastName</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC37_NewsLink()'><b>TC37_NewsLink</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC46_LoginPage_ForgetPasswordWithoutEmail()'><b>TC46_LoginPage_ForgetPasswordWithoutEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC64_Register_OnlyPasswordsMissing()'><b>TC64_Register_OnlyPasswordsMissing</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC59_Register_ValidEmailInvalidPassword()'><b>TC59_Register_ValidEmailInvalidPassword</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC17_CheckPopularTagViewAll()'><b>TC17_CheckPopularTagViewAll</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC20_CheckCategoryLink_InHeader()'><b>TC20_CheckCategoryLink_InHeader</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC04_CheckIfShoppingCartPageIsRunning()'><b>TC04_CheckIfShoppingCartPageIsRunning</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC66_Register_OnlyUserNameMissing()'><b>TC66_Register_OnlyUserNameMissing</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC34_AdvancedPrice_FromToPrice()'><b>TC34_AdvancedPrice_FromToPrice</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC51_LoginPage_LoginUnregisteredEmail()'><b>TC51_LoginPage_LoginUnregisteredEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC41_CheckIfABlogIsLoaded()'><b>TC41_CheckIfABlogIsLoaded</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>11</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC12_CheckIfManufacturerIsDisplayed()'><b>TC12_CheckIfManufacturerIsDisplayed</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC73_LoginPage_ForgetPasswordWithRegisteredEmail()'><b>TC73_LoginPage_ForgetPasswordWithRegisteredEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>4</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC36_CompareProductsList()'><b>TC36_CompareProductsList</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC25_Search_WrongData()'><b>TC25_Search_WrongData</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC52_Register_NoInput()'><b>TC52_Register_NoInput</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC69_Register_CheckIfUserIsAbleToSelectGender()'><b>TC69_Register_CheckIfUserIsAbleToSelectGender</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC23_Search_NoData()'><b>TC23_Search_NoData</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC02_CheckIfLoginPageIsRunning()'><b>TC02_CheckIfLoginPageIsRunning</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC03_CheckIfRegisterPageIsRunning()'><b>TC03_CheckIfRegisterPageIsRunning</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC47_LoginPage_ForgetPasswordWithInvalidEmail()'><b>TC47_LoginPage_ForgetPasswordWithInvalidEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>6</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC45_LoginPage_CheckIfForgerPasswordLinkIsWorking()'><b>TC45_LoginPage_CheckIfForgerPasswordLinkIsWorking</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC68_Register_WithAlreadyRegisteredUser()'><b>TC68_Register_WithAlreadyRegisteredUser</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC32_AdvancedSearch_FromPrice()'><b>TC32_AdvancedSearch_FromPrice</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC08_CheckIfFeatureProductsAreDisplayed()'><b>TC08_CheckIfFeatureProductsAreDisplayed</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC13_CheckIfPopularTagIsDisplayed()'><b>TC13_CheckIfPopularTagIsDisplayed</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC09_CheckIfCommunityPollIsDisplayed()'><b>TC09_CheckIfCommunityPollIsDisplayed</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC61_Register_OnlyEmail()'><b>TC61_Register_OnlyEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC81_User_NavigateFromGoToCart()'><b>TC81_User_NavigateFromGoToCart</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>8</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC78_CartPageInvalidDiscountCode()'><b>TC78_CartPageInvalidDiscountCode</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>8</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC11_CheckIfCategoryIsDisplayed()'><b>TC11_CheckIfCategoryIsDisplayed</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC28_AdvancedSearch_WrongCatManufac()'><b>TC28_AdvancedSearch_WrongCatManufac</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC54_Register_OnlyFirstNameAndLastName()'><b>TC54_Register_OnlyFirstNameAndLastName</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC75_LoginPage_LoginSuccessful()'><b>TC75_LoginPage_LoginSuccessful</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>4</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC35_NewProductLink()'><b>TC35_NewProductLink</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC06_CheckIfContactUsPageIsRunning()'><b>TC06_CheckIfContactUsPageIsRunning</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC79_CartPageInvalidGiftCard()'><b>TC79_CartPageInvalidGiftCard</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>11</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC26_Search_CorrectData()'><b>TC26_Search_CorrectData</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC27_AdvancedSearch_WrongCategory()'><b>TC27_AdvancedSearch_WrongCategory</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC29_AdvancedSearch_AllData()'><b>TC29_AdvancedSearch_AllData</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC10_CheckIfNewsletterIsDisplayed()'><b>TC10_CheckIfNewsletterIsDisplayed</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC63_Register_OnlyEmailMissing()'><b>TC63_Register_OnlyEmailMissing</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC58_Register_ConfirmpasswordLengthMismatch()'><b>TC58_Register_ConfirmpasswordLengthMismatch</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC43_CheckRecentlyViewedProductLink()'><b>TC43_CheckRecentlyViewedProductLink</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC48_LoginPage_ForgetPasswordWithUnregisteredEmail()'><b>TC48_LoginPage_ForgetPasswordWithUnregisteredEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC33_AdvancedSearch_ToPrice()'><b>TC33_AdvancedSearch_ToPrice</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC74_LoginPage_RegisteredEmailBlankPassword()'><b>TC74_LoginPage_RegisteredEmailBlankPassword</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC76_LoginPage_LoginSuccessfulWithRememberMe()'><b>TC76_LoginPage_LoginSuccessfulWithRememberMe</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>3</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC14_CheckIfCartQuantityIsDisplayed()'><b>TC14_CheckIfCartQuantityIsDisplayed</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>0</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC44_CheckIfUserCanNavigateToYoutubeLink()'><b>TC44_CheckIfUserCanNavigateToYoutubeLink</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>7</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC05_CheckIfWishlistPageIsRunning()'><b>TC05_CheckIfWishlistPageIsRunning</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC21_CheckSubCategoryLink_InHeader()'><b>TC21_CheckSubCategoryLink_InHeader</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>2</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC50_LoginPage_LoginInvalidEmail()'><b>TC50_LoginPage_LoginInvalidEmail</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite2.TC62_Register_OnlyEmailAndPassword()'><b>TC62_Register_OnlyEmailAndPassword</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite2</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite2@40238dd0</td></tr>
+<tr>
+<td title='automationSuite.tests.TestSuite_Regression_Suite1.TC18_CheckCategoryLink()'><b>TC18_CheckCategoryLink</b><br>Test class: automationSuite.tests.TestSuite_Regression_Suite1</td>
+<td></td>
+<td>1</td>
+<td>automationSuite.tests.TestSuite_Regression_Suite1@7f132176</td></tr>
+</table><p>
+</body>
+</html>
